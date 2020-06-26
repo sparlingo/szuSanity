@@ -1,3 +1,5 @@
+import LeafletGeopointInput from 'sanity-plugin-leaflet-input'
+
 export default {
   name: 'playing_field',
   title: 'Field',
@@ -25,14 +27,7 @@ export default {
     {
       name: 'location',
       type: 'geopoint',
-      options: {
-        leaflet: {
-          defaultLocation: {
-            lat: 22.55622,
-            long: 114.11879
-          }
-        }
-      }
-    },
+      inputComponent: LeafletGeopointInput
+    }
   ]
 }
